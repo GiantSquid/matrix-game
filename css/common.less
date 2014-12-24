@@ -32,7 +32,7 @@ body {
 	padding: 0;
 	height: 100%;
     font-family: 'Dosis';
-	background-color: @bg-1;
+	background-color: #ccc;
 	height: 100%;
 }
 iframe {
@@ -46,4 +46,46 @@ iframe {
 }
 .h30 {
 	height: 30px;
+}
+
+.field {
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	align-content: space-around;
+	height: 60vh;
+	width: 60vh;
+	top: 50%;
+	left: 50%;
+	margin-top: -30vh;
+	margin-left: -30vh;
+}
+
+.swapper {
+	background-color: #000;
+	height: 14vh;
+	width: 14vh;
+	box-sizing: border-box;
+	cursor: pointer;
+	transition: 0.2s;
+	border-radius: 7vh;
+}
+
+.swapper:hover {
+	border-radius: 4vh;
+}
+
+.timer {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: 30vh;
+	margin-left: -15vh;
+	font-size: 10vh;
+	text-align: center;
+	width: 30vh;
+	color: #000;
 }
